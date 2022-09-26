@@ -284,6 +284,7 @@ const CalendarList = (props: CalendarListProps, ref: any) => {
     <View style={style.current.flatListContainer}>
       <FlatList
         // @ts-expect-error
+        initialNumToRender={2}
         ref={list}
         style={listStyle}
         showsVerticalScrollIndicator={showScrollIndicator}
